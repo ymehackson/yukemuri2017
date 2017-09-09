@@ -1,0 +1,15 @@
+<%= form_with model: @user do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :birthday %>
+  <%= f.date_select :birthday %>
+
+  <%= f.label :location %>
+  <%= f.select :location, options_for_select: @prefectures %>
+
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+
+  <%= f.submit %>
+<% end %>
