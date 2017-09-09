@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Group.create!(name: "Example User",
+              description: "example",
+              contact:"example@gmail.com",
+              location:"愛知",
+              image: "example@railstutorial.org",
+              real_type: 1,
+              )
