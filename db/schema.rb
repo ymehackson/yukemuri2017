@@ -24,6 +24,16 @@ ActiveRecord::Schema.define(version: 20170909215115) do
     t.string "img_top"
     t.string "img_sub_1"
     t.string "img_sub_2"
+ActiveRecord::Schema.define(version: 20170909190920) do
+
+  create_table "users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.date "birthday"
+    t.integer "real_type"
+    t.text "image"
+    t.integer "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
