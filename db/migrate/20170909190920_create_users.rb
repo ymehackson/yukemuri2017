@@ -5,6 +5,7 @@ class CreateUsers < ActiveRecord::Migration[5.1]
       t.date    :birthday
       t.integer :real_type
       t.text    :image
+      t.integer :location
       t.timestamps
     end
   end
