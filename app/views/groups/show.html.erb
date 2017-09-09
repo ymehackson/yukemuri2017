@@ -1,11 +1,12 @@
 <% provide(:title, @group.name) %>
 
+<%= imageIcon @group %>
 <h1>
   <%= @group.name %>
 </h1>
-<%= imageUser @group %>
+<%= imageTop @group %>
 
-<h2>描画</h2>
+<h2>説明</h2>
 <p>
   <%= @group.description %>
 <p>
@@ -16,3 +17,7 @@
 <p>
   <%= @group.location %>
 </p>
+
+<h2>写真</h2>
+<%= imageSub1 @group %>
+<%= imageSub2 @group %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170909192814) do
+ActiveRecord::Schema.define(version: 20170909215115) do
 
   create_table "groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "name"
@@ -21,6 +21,9 @@ ActiveRecord::Schema.define(version: 20170909192814) do
     t.integer "real_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "img_top"
+    t.string "img_sub_1"
+    t.string "img_sub_2"
   end
 
 end

@@ -4,8 +4,7 @@
 <ul class="users">
   <% @groups.each do |user| %>
       <li>
-        <!--<%= gravatar_for user %>-->
-        <%= imageUser user %>
+        <%= imageIcon user %>
         <%= link_to user.name, user %>
       </li>
   <% end %>
