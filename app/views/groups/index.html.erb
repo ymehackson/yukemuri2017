@@ -6,6 +6,11 @@
       <li>
         <%= imageIcon user %>
         <%= link_to user.name, user %>
+        <% @categories.each do |ca| %>
+          <%= ca.name %>
+            <!--master_id-->
+            <%= @groupcategories.find_by(master_id: ca.id).score %>
+        <% end %>
       </li>
   <% end %>
 </ul>

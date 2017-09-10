@@ -6,15 +6,13 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Group.create!(name: "libre",
+Group.create!([{name: "libre",
               description: "リーブルはいろんな活動を通じて友達の輪を広げることを目的としたオールラウンドサークルです。まだ設立したばかりなのでみんな打ち解けやすいです",
               contact:"example@gmail.com",
               location:"東京都",
               image: "example@railstutorial.org",
-              real_type: 1,
-)
-
-Group.create!(name: "学さる",
+              real_type: 1},
+               {name: "学さる",
               description: "春は、旅行に球技大会
 夏は、海水浴にお祭り
 秋は、運動会に食い倒れ会
@@ -35,17 +33,13 @@ Group.create!(name: "学さる",
               location:"東京都、長野県",
               image: "example@railstutorial.org",
               real_type: 1,
-              )
-
-Group.create!(name: "APPLE",
+}, {name: "APPLE",
               description: "月に2回の活動と一回のミーティングを行ってます。季節に合ったイベントやみんなでお出かけしたりしてます。",
               contact:"example@gmail.com",
               location:"神奈川県",
               image: "example@railstutorial.org",
               real_type: 1,
-)
-
-Group.create!(name: "ぐるはん",
+}, {name: "ぐるはん",
               description: "当サークルはグルメハンティング、略して「ぐるはん」という名前のとおり、未知のお店に行っていいお店を発掘・開拓することを目的としたインカレ団体です(´∀｀*)
 学生であれば誰でも歓迎するという信念を持って運営しており、内輪で固まるといったこともありませんので、安心してご参加頂けると思います！
 大学・学年は一切入会条件に含みません！
@@ -55,9 +49,7 @@ Group.create!(name: "ぐるはん",
               location:"東京都",
               image: "example@railstutorial.org",
               real_type: 1,
-)
-
-Group.create!(name: "muy bien",
+}, {name: "muy bien",
               description: "大人数での飲み会から、少人数でのカフェ巡りまで、大小様々な規模の活動が充実！
 サークル内にカフェ部、グルメ部といった部活動もあり、より専門的に楽しむことが出来ます。
 初詣や花火大会、クリスマスパーティなどの季節のイベントはもちろん、ソフトボール大会やリアル脱出ゲーム、ディズニーランドなどの人気企画も目白押しです。
@@ -68,4 +60,16 @@ Group.create!(name: "muy bien",
               location:"東京都",
               image: "example@railstutorial.org",
               real_type: 1,
+}])
+
+Category.create!(
+        A:"少人数",
+        B:"多人数",
+        name:"人数"
+)
+
+GroupCategory.create!(
+        group_id:"1",
+        master_id:"1",
+        score:"A"
 )
