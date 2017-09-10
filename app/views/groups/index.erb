@@ -52,30 +52,22 @@
     <div class="container">
 
       <!-- Page Heading -->
-      <h1 class="my-4 pagetitle">入りたいのはどっち？
+      <h1 class="my-4 pagetitle">診断結果
       </h1>
 
       <div class="row">
         <div class="col-lg-6">
-          <div class="card h-100">
-            <%= button_to action: 'choose', method: "POST" do %>
-              <img class="card-img-top" src="http://placehold.it/700x400" alt="">
-            <% end %>
+          <div class="p2_your">
+            あなたは...
           </div>
-        </div>
-        <div class="p1_or">
-          OR
-        </div>
-        <div class="col-lg-6">
-          <div class="card h-100">
-            <%= button_to action: 'choose', method: "POST" do %>
-              <img class="card-img-top" src="http://placehold.it/700x400" alt="">
-            <% end %>
+          <div class="p2_type">
+            〇〇タイプ
           </div>
         </div>
       </div>
-
       <!-- /.row -->
+      <p><a href="#" class="btn btn-warning">あなたに合うグループは？</a></p>
+      <!-- <button type="button" class="btn btn-warning btn-lg">Block level button</button> -->
 
       <!-- Pagination -->
     </div>

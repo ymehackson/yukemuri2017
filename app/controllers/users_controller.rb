@@ -6,18 +6,21 @@ class UsersController < ApplicationController
 
   def create
     User.create(user_params)
+    redirect_to '/users/select'
   end
 
   def select
     @pictures = Picture.all
-    User.find(1).pictures
-    if (false)
-      # redirect_to :group
-    end
   end
 
   def choose
     PictureUser.where(user_id: 1, picture_id: params[:picture_id]).first_or_create(user_id: 1, picture_id: params[:picture_id])
+    pic = Picture.last
+    pic.value += 1
+    pic.save
+    if (pic.value >= 6)
+       redirect_to :groups and return
+    end
     redirect_to '/users/select'
   end
 

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
       post :choose
     end
   end
+
+  resources :groups
 end

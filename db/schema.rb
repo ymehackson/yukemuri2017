@@ -12,6 +12,36 @@
 
 ActiveRecord::Schema.define(version: 20170910021100) do
 
+  create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "A"
+    t.string "B"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "group_categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "group_id"
+    t.string "master_id"
+    t.string "score"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "groups", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "name"
+    t.string "description"
+    t.string "contact"
+    t.string "location"
+    t.string "image"
+    t.integer "real_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "img_top"
+    t.string "img_sub_1"
+    t.string "img_sub_2"
+  end
+
   create_table "picture_users", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.bigint "user_id"
     t.bigint "picture_id"
