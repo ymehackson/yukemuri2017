@@ -10,10 +10,14 @@ class UsersController < ApplicationController
 
   def select
     @pictures = Picture.all
+    if (false)
+      # redirect_to :group
+    end
   end
 
   def choose
-    PictureUser.create()
+    PictureUser.where(user_id: 1, picture_id: params[:picture_id]).first_or_create(user_id: 1, picture_id: params[:picture_id])
+    redirect_to '/users/select'
   end
 
   private
