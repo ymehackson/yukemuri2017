@@ -62,14 +62,27 @@ Group.create!([{name: "libre",
               real_type: 1,
 }])
 
-Category.create!(
+Category.create!([{
         A:"少人数",
         B:"多人数",
-        name:"人数"
+        name:"人数"}]
 )
 
-GroupCategory.create!(
+GroupCategory.create!([{
         group_id:"1",
         master_id:"1",
         score:"A"
-)
+      },
+       {group_id:"2",
+        master_id:"1",
+      score:"A"},
+                       {group_id:"3",
+                        master_id:"1",
+                        score:"B"},
+                       {group_id:"4",
+                        master_id:"1",
+                        score:"B"},
+                       {group_id:"5",
+                        master_id:"1",
+                        score:"B"},
+])
