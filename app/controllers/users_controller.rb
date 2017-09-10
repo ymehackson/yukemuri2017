@@ -8,6 +8,14 @@ class UsersController < ApplicationController
     User.create(user_params)
   end
 
+  def select
+  
+  end
+
+  def choose
+
+  end
+
   private
 
   def user_params
