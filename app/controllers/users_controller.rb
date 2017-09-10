@@ -9,7 +9,7 @@ class UsersController < ApplicationController
   end
 
   def select
-  
+    @pictures = Picture.all
   end
 
   def choose
