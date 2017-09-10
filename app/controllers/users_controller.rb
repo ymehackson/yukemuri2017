@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
   def select
     @pictures = Picture.all
+    User.find(1).pictures
     if (false)
       # redirect_to :group
     end
