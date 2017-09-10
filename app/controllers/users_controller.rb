@@ -17,6 +17,6 @@ class UsersController < ApplicationController
   end
 
   def parse_prefecture(prefecture)
-    a = YAML.load_file('prefectures.yml')[prefecture]
+    YAML.load_file('prefectures.yml')[prefecture]
   end
 end
