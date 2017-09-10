@@ -5,8 +5,13 @@ Rails.application.routes.draw do
     collection do
       get :select
       post :choose
+      get :result
     end
   end
 
-  resources :groups
+  resources :groups do
+    collection do
+      get :detail
+    end
+  end
 end

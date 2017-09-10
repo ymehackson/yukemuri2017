@@ -15,4 +15,7 @@ class GroupsController < ApplicationController
     @group = Group.find(params[:id])
     @groupcategory = GroupCategory.find(params[:id])
   end
+
+  def detail
+  end
 end

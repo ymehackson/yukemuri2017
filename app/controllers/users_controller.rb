@@ -42,9 +42,12 @@ class UsersController < ApplicationController
     pic.value += 1
     pic.save
     if (pic.value >= 6)
-       redirect_to :groups and return
+       redirect_to '/users/result' and return
     end
     redirect_to '/users/select'
+  end
+
+  def result
   end
 
   private
