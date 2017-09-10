@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def choose
-
+    PictureUser.create()
   end
 
   private
