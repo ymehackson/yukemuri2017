@@ -1,0 +1,208 @@
+/*!
+ * Start Bootstrap - 2 Col Portfolio (http://startbootstrap.com/template-overviews/2-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-2-col-portfolio/blob/master/LICENSE)
+ */
+@import "bootstrap";
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.pagetitle{
+  background-image: linear-gradient(44deg, #FFD641 0%, #F49C85 100%);
+  padding: 30px;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 21px;
+  text-align: center;
+}
+
+.navbar{
+  background: #FFFFFF;
+}
+.navbar-light .navbar-brand{
+  font-size: 21px;
+  padding-left: 10px;
+  color:#FFB143;
+}
+
+
+.p1_or{
+  margin: 10px auto;
+  font-size:21px;
+  color:#8E8E93;
+}
+
+.p2_your{
+  margin: 10px auto;
+  font-size:13px;
+  color:#FFB143;
+}
+
+.p2_type{
+  margin: 10px auto;
+  font-size:21px;
+  text-align: center;
+}
+
+.portfolio-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.btn-warning{
+  margin: 10px auto;
+  color:#fff;
+  background: #FFB143;
+  box-shadow: 0px 2px 0px 0px #FF7A00; 
+}
+
+.btn{
+  display:block;
+  width:60%;
+}
+
+.pagetitle{
+  background-image: linear-gradient(44deg, #FFD641 0%, #F49C85 100%);
+  padding: 30px;
+  height: 80px;
+  color: #FFFFFF;
+  font-size: 21px;
+  text-align: center;
+}
+
+.p4_h3{
+  margin-top: 20px;
+  font-size:15px;
+  color:#FF9500;
+}
+
+.p4_linetitle{
+  height: 47px;
+  margin: 10px auto;
+  background-color:#FA9DAF;
+  padding: 10px;
+  color: #FFFFFF;
+  font-size: 21px;
+  text-align: center;
+}
+
+.portfolio-item {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+.bg_gray {
+  background-color: #F1F1F1;
+}
+
+.group-item {
+  /* Rectangle 5: */
+  background-color: #fff;
+  /* ○○グループ: */
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.group-flex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.group-name {
+  font-size: 17px;
+  color: #FF9500;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.group-info {
+  padding: 10px 20px;
+  display: block;
+}
+
+.tag-box {
+  /* Rectangle 3: */
+  background-color: #70B8BB;
+  border-radius: 7px;
+  color: #fff;
+  padding: 3px 4px;
+  width: 80px;
+  margin-bottom: 3px;
+  box-sizing:border-box;
+}
+
+.group-intro {
+  width: 100%;
+  word-break: break-all;
+  color: #8E8E93;
+}
+
+.btn{
+  display:block;
+  width:60%;
+}
+
+.btn-warning{
+  margin: 10px auto;
+  color:#fff;
+  background: #FFB143;
+  box-shadow: 0px 2px 0px 0px #FF7A00;
+}
+
+footer{
+  margin-top: 30px;
+  height: 50px;
+}
+
+/* forms */
+
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin: 30px 0px;
+  //@include box_sizing;
+}
+
+input {
+  height: auto !important;
+}
+
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
+}

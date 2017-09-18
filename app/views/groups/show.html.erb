@@ -1,23 +1,37 @@
 <% provide(:title, @group.name) %>
+<!-- Page Content -->
+<div class="container">
 
-<%= imageIcon @group %>
-<h1>
-  <%= @group.name %>
-</h1>
-<%= imageTop @group %>
+  <!-- Page Heading -->
+  <h1 class="my-4 pagetitle">仲良しループ
+  </h1>
+  <div class="p2_type">
+    <%= imageTop @group %>
+  </div>
 
-<h2>説明</h2>
-<p>
-  <%= @group.description %>
-<p>
-<h2>連絡先</h2>
-<p>
-  <%= @group.contact %>
-<h2>場所</h2>
-<p>
-  <%= @group.location %>
-</p>
+  <div class="row">
+    <div class="col-lg-6">
+      <h3 class = "p4_h3">概要</h3>
+      <p>
+        <%= @group.description %>
+      </p>
+      <h3 class = "p4_h3">活動場所</h3>
+      <p><%= @group.location %></p>
+    </div>
+  </div>
 
-<h2>写真</h2>
-<%= imageSub1 @group %>
-<%= imageSub2 @group %>
+  <div class="container">
+    <div class="p2_type">
+      <%= imageSub1 @group %>
+      <%= imageSub2 @group %>
+    </div>
+  </div>
+  <!-- /.row -->
+  <!-- <button type="button" class="btn btn-warning btn-lg">Block level button</button> -->
+
+  <!-- Pagination -->
+</div>
+<!-- /.container -->
+
+<div class="my-4 p4_linetitle">LINEでメッセージを送る
+</div>

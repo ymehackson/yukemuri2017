@@ -86,3 +86,9 @@ GroupCategory.create!([{
                         master_id:"1",
                         score:"B"},
 ])
+
+Picture.create!([{
+      url:'/assets/pic5.jpg',
+      value:1,
+    real_type:1}
+])
